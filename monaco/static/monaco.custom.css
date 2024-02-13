@@ -8,10 +8,6 @@
     width: 420px !important
 }
 
-.editor{
-    height: 100%;
-   }
-
 @media only screen and (max-width: 782px) {
     .monaco-editor--conteiner {
         margin-left: 0 !important;
