@@ -10,7 +10,6 @@ class MonacoEditorWidget(forms.Textarea):
             'data-language': 'json',
             'data-wordwrap': 'on',
             'data-minimap': 'false',
-            'automaticLayout': 'true'
         }
         monaco_attrs.update(attrs)
         output = super(MonacoEditorWidget, self).render(name, value, monaco_attrs)
