@@ -43,6 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 });
                 monaco.editor.setTheme('myTheme');
 
+                setTimeout(function () {
                 var editor = monaco.editor.create(document.getElementById(container.id + '--editor'), {
                     renderWhitespace: true,
                     language: container.dataset.language,
@@ -63,6 +64,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 form.addEventListener('submit', function (e) {
                     container.value = editor.getValue();
                 });
+            }, 1000);
             } catch (err) {
                 container.style.display = 'block';
                 editorWrapper.remove();
