@@ -16,10 +16,10 @@ setup(
     long_description=README,
     long_description_content_type="text/markdown",
     author='Ayush Shanker',
-    keywords=['django<1.11', 'monaco',],
+    keywords=['django<=1.11', 'monaco',],
     platforms=['OS Independent'],
     license='MIT',
     install_requires=[
-        'Django<1.11',
+        'Django<=1.11',
     ]
 )
