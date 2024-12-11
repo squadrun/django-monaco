@@ -7,7 +7,7 @@ README = open(
 
 setup(
     name="squad-django-monaco",
-    version="1.2.4",
+    version="1.2.5",
     packages=["monaco"],
     description="Monaco editor widgets in the Django Admin",
     include_package_data=True,
