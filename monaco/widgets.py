@@ -17,4 +17,5 @@ class MonacoEditorWidget(forms.Textarea):
 
     class Media:
         css = {"all": ("monaco.custom.css",)}
-        js = ("monaco/loader.js", "monaco.config.js")
+        js = ("https://code.jquery.com/jquery-3.5.1.min.js", "monaco/loader.js", "monaco.config.js",)
+
