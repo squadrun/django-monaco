@@ -4,7 +4,7 @@ from django import forms
 
 class MonacoEditorWidget(forms.Textarea):
 
-    def render(self, name, value, attrs=None):
+    def render(self, name, value, attrs=None, renderer=None):
         monaco_attrs = {
             "monaco-editor": "true",
             "data-language": "json",
@@ -12,7 +12,7 @@ class MonacoEditorWidget(forms.Textarea):
             "data-minimap": "false",
         }
         monaco_attrs.update(attrs)
-        output = super(MonacoEditorWidget, self).render(name, value, monaco_attrs)
+        output = super(MonacoEditorWidget, self).render(name, value, monaco_attrs, renderer)
         return output
 
     class Media:
